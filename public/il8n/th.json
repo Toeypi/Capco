@@ -1,0 +1,49 @@
+{
+    "MENU": {
+        "PEOPLEINFORMATION": "ข้อมูลประชาชน",
+        "REGISTER": "ลงทะเบียน",
+        "BULKREGISTER": "ลงทะเบียนเป็นกลุ่ม",
+        "REFERENCEDOMAIN": "โดเมนอ้างอิง",
+        "REGISTERINFORMATION":"ข้อมูลลงทะเบียน",
+        "SERACHMODE":"หมวดค้นหา"
+    },
+    "REGISTER":{
+        "TITLE":"ชื่อต้น",
+        "FIRSTNAME":"ชื่อจริง",
+        "LASTNAME":"นามสกุล",
+        "BLOODGROUP":"กรุ๊ปเลือด",
+        "SEX":"เพศ",
+        "DATEOFBIRTH":"วันเดือนปีเกิด",
+        "NATIONALID":"เลขประจำตัวประชาชน",
+        "INFORMATION":"รายละเอียด",
+        "MODIFYDEMOGRAPHIC":"แก้ไขข้อมูลส่วนตัว"
+    },
+    "COMMON":{
+        "SAVE":"บันทึก",
+        "CANCEL":"ออก",
+        "SEARCH":"ค้นหา",
+        "CLEAR":"เคลีย",
+        "REGISTER":"ลงทะเบียน",
+        "NEW":"ใหม่",
+        "EDIT":"แก้ไขข้อมูล",
+        "REQUIRED":"ต้องกรอกฟิลด์นี้",
+        "DEFAULT":"ตั้งค่าเริ่มต้น",
+        "ACTIVEFROM":"เริ่มต้นใช้งานวันที่",
+        "ACTIVETO":"ใช้งานถึงวันที่",
+        "DISPLAYORDER":"แสดงการเรียงลำดับ"
+    },
+    "REFERENCEDOMAIN":{
+        "CODE":"โดเมนโคด",
+        "NAME":"ชื่อ",
+        "DESCRIPTION":"คำอธิบาย",
+        "REFERENCEVALUES":"ข้อมูลอ้างอิง"
+    },
+    "PATIENT":{
+        "DOBAPPROX":"ไม่ทราบวันเดือนปีเกิด"
+    },
+    "ERRORS":{
+        "ERROR":"ข้อผิดพลาด",
+        "PATIENTAGE":"โปรดพิมอายุให้ถูกต้อง"
+    }
+
+}

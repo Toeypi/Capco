@@ -1,0 +1,95 @@
+<html ng-app="app" ng-controller="InitController">
+
+<head>
+    <!-- Angular Material CSS now available via Google CDN; version 1.2.1 used here -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="styles/fontawesome-free-5.15.1-web/style.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="styles/fontawesome-free-5.15.1-web/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+
+    <!-- Angular Material Javascript now available via Google CDN; version 1.2.1 used here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
+
+    <!-- ui-router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.29/angular-ui-router.min.js"></script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script> -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- optional for auto complete / suggested value feature -->
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <!-- angular advanced searchbox includes -->
+    <link rel="stylesheet" href="library/angular-advanced-searchbox-master/dist/angular-advanced-searchbox.min.css">
+    <script src="library/angular-advanced-searchbox-master/dist/angular-advanced-searchbox-tpls.min.js"></script>
+    <!-- style sheet -->
+    <link href="bower_components/angular-material-data-table/dist/md-data-table.min.css" rel="stylesheet"
+        type="text/css" />
+    <!-- module table-->
+    <script type="text/javascript"
+        src="bower_components/angular-material-data-table/dist/md-data-table.min.js"></script>
+    <!-- angular translate -->
+    <script src="bower_components/angular-translate/angular-translate.min.js"></script>
+    <script
+        src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <!-- angular moment -->
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/angular-moment/angular-moment.min.js"></script>
+    <div layout="row">
+        <img src="styles/image/reacticon.jpg" width="40" height="40" alt="Italian Trulli" style="margin-block: auto;">
+        <div layout="row" class="topnav">
+            <div layout="row" layout-md ="column" layout-sm="column" layout-xs="column" flex="40">
+                <a ui-sref="news" flex="25">{{'MENU.NEWS' | translate}}</a>
+                <a ui-sref="region" flex="25">{{'MENU.REGION' | translate}}</a>
+                <a ui-sref="video" flex="25">{{'MENU.VIDEO' | translate}}</a>
+                <a ui-sref="tv" flex="25">{{'MENU.TV' | translate}}</a>
+            </div>
+            <div layout="row" layout-md ="column" layout-sm="column" layout-xs="column" flex="60">
+                <form ng-submit="search()" style="margin-block: auto;padding: 10px;">
+                    <input type="text" ng-model="name" placeholder="Search..."
+                        style="background-color: rgb(200,225,211);border: 0px;border-radius: 5px" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- <ui-view></ui-view> -->
+    <div ui-view class="main" flex>
+    </div>
+
+
+
+
+    <!-- main app module -->
+    <script src="app.js"></script>
+    <script src="app.filter.js"></script>
+    <script src="config.translate.js"></script>
+    <!-- news module-->
+    <script src="news/news.module.js"></script>
+    <script src="news/news.controller.js"></script>
+    <script src="news/news.config.js"></script>
+    <!-- region module-->
+    <script src="region/region.module.js"></script>
+    <script src="region/region.controller.js"></script>
+    <script src="region/region.config.js"></script>
+    <!-- video module-->
+    <script src="video/video.module.js"></script>
+    <script src="video/video.controller.js"></script>
+    <script src="video/video.config.js"></script>
+    <!-- tv module-->
+    <script src="tv/tv.module.js"></script>
+    <script src="tv/tv.controller.js"></script>
+    <script src="tv/tv.config.js"></script>
+</body>
+
+</html>

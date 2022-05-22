@@ -1,0 +1,22 @@
+<md-grid-list md-cols-xs="1" md-cols-sm="1" md-cols-md="1" md-cols-gt-md="3" md-row-height="600px">
+    <md-grid-tile ng-repeat="val in vm.data">
+        <md-card style="height:90%">
+            <md-card-header>
+                <md-card-header-text>
+                    <span class="md-title">{{val.title}}</span>
+                </md-card-header-text>
+            </md-card-header>
+            <img ng-src="{{val.image}}" class="md-card-image">
+            <md-card-content>
+                <p>
+                    {{val.description}}
+                </p>
+            </md-card-content>
+            <md-card-actions style="position: absolute;top:90%">
+                <p style="color: rgb(181,181,181);">Updated {{val.date | dateformat:'MMMM DD,YYYY HH:mm'}}</p>
+            </md-card-actions>
+        </md-card>
+    </md-grid-tile>
+
+
+</md-grid-list>

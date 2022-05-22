@@ -1,0 +1,11 @@
+{
+    "MENU": {
+        "NEWS": "News",
+        "REGION": "Regions",
+        "VIDEO": "Video",
+        "TV": "Tv"
+    },
+    "COMMON": {
+        "SEARCH": "Search"
+    }
+}
